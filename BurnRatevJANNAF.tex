@@ -10,7 +10,7 @@
 \title{Ionic Liquid Propellant Burn Rate Model using Bayesian Inversion}
 \author{Brandon Denton\\
 MOOG Inc.\\
-East Aurora, NY 14052\\
+East Aurora, NY 14052
 \and
 Paul Bauman\\
 University at Buffalo, The State University of New York\\
@@ -110,27 +110,26 @@ of 120 fps, capturing the propagation of the flame front as it consumes the prop
 burning surface. Instrunet and LabVIEW software were used to monitor the pressure inside the strand burner chamber
 as well as record instantaneous pressure and ignition data. ImageJ video software and a MATLAB data reduction code
 were used to analyze the video images and calculate the linear regression burning rates with average pressure over
-a selected burn time. A typical series of captured images during a combustion event is shown in Figure \ref{5}.
+a selected burn time. A typical series of captured images during a combustion event is shown in Figure \ref{fig5}.
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.48\textwidth]{Strand_Burner_image_1.png}
-\includegraphics[width=0.48\textwidth]{Strand_Burner_image_2.png}
-\caption{Strand Burner Schematic \& Image}
+\includegraphics[width=0.48\textwidth]{Figure_1.jpg}
+\caption{Schematic-Diagram of High-Pressure Optical Strand Burner. Propellant stand inserted from bottom}
 \label{fig1}
 \end{figure}
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.48\textwidth]{Burn_Time_Elapse.png}
-\caption{Series of Images Captured during a Single Test}
+\includegraphics[width=0.48\textwidth]{Figure_2.jpg}
+\caption{Photograph of High--Pressure Optical Strand Burner. Orientation shows Camera View of Optical Access Window}
 \label{fig2}
 \end{figure}
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.75\textwidth]{Experimentors_Obs_fit.png}
-\caption{Observed Burn Rates for Candidate Ionic Liquid Propellant}
+\includegraphics[width=0.75\textwidth]{Figure_3.jpg}
+\caption{AF-M315E with Igniter in the Test Cylinder installed on Strand Burner Base Plate. Nichrome Wire placed through Center of Double-Base Propellant}
 \label{fig3}
 \end{figure}
 
@@ -325,7 +324,7 @@ algorithm. Before providing the resulting Parameter Density Functions (pdf) for 
 the models, a plot of the filtered chain is provided in Figures \ref{LPChain} \& \ref{HPChain}. As expected, 
 plots which resemble white noise were generated. Additionally, the filtered sampling chains were analyzed for
 autocorrelation using MATLAB's autocorr function. Again, as expected, the Autocorrelation Functions (ACF) shown in
-Figures \ref{autoA} \& \ref{auton} decrease and tend to zero as lag increases. Together these results indicate
+Figures \ref{autoHP} \& \ref{autoLP} decrease and tend to zero as lag increases. Together these results indicate
 random samplings of the pdf for each of the parameters.
 
 \begin{figure}[htb]
@@ -346,10 +345,18 @@ random samplings of the pdf for each of the parameters.
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.48\textwidth]{   .png}
-\includegraphics[width=0.48\textwidth]{   .png}
-\caption{Filtered Chain ACF v Lag}
-\label{ACFplot}
+\includegraphics[width=0.48\textwidth]{ACF_lnA_filt_HP.png}
+\includegraphics[width=0.48\textwidth]{ACF_n_filt_HP.png}
+\caption{Filtered Chain High Pressure ACF v Lag}
+\label{autoHP}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.48\textwidth]{ACF_lnA_filt_LP.png}
+\includegraphics[width=0.48\textwidth]{ACF_n_filt_LP.png}
+\caption{Filtered Chain Low Pressure ACF v Lag}
+\label{autoLP}
 \end{figure}
 
 The pdf's for each of the model parameters are provided in Figures \ref{LPpdf} \& \ref{HPpdf}. These figures show that each of 
