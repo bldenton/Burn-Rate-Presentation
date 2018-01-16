@@ -1,9 +1,9 @@
 #!/bin/sh
 
-pdflatex BurnRatev1.tex
+pdflatex BurnRatevJANNAF
 
-bibtex BurnRatev1.tex
+bibtex BurnRatevJANNAF
 
-pdflatex BurnRatev1.tex
-pdflatex BurnRatev1.tex
+pdflatex BurnRatevJANNAF
+pdflatex BurnRatevJANNAF
 
