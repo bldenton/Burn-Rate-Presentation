@@ -23,6 +23,7 @@ Altoona, PA 16601\\
 Stephen Tomaszewski\\
 The Pennsylvania State University\\
 University Park, PA 16802\\}
+
 \date{Sept. 28, 2017}
 
 \maketitle
@@ -88,6 +89,20 @@ environment, as shown schematically in Figure \ref{fig1}. The chamber, construct
 equipped with two optical viewing ports to allow for video observation of the burning surface as a function of
 time. A photograph of the high-pressure optical strand burner is shown in Figure \ref{fig2}.
 
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.48\textwidth]{Figure_1.jpg}
+\caption{Schematic-Diagram of High-Pressure Optical Strand Burner. Propellant stand inserted from bottom}
+\label{fig1}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.48\textwidth]{Figure_2.jpg}
+\caption{Photograph of High--Pressure Optical Strand Burner. Orientation shows Camera View of Optical Access Window}
+\label{fig2}
+\end{figure}
+
 The maximum working pressure of the optical strand burner was 68.9 MPa (10 ksi). A constant flow of GN$_2$ was
 supplied to the optical strand burner during the test to create an inert pressure environment for the propellant.
 The base plate supporting the propellant had multiple feedthrough ports to provide pathways into the chamber for
@@ -105,6 +120,20 @@ which was routed through high-pressure feed through fittings at the bottom of th
 close-up view of an installed propellant sample is shown in Figure \ref{fig3}. In addition, AF-M315E installed in
 the liquid strand burner (seen through the optical port) is shown in Figure \ref{fig4}.
 
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.75\textwidth]{Figure_3.jpg}
+\caption{AF-M315E with Igniter in the Test Cylinder installed on Strand Burner Base Plate. Nichrome Wire placed through Center of Double-Base Propellant.}
+\label{fig3}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.75\textwidth]{Figure_4.jpg}
+\caption{AF-M315E Sample seen through Front Optical Port in Liquid Strand Burner. Linear Regression of Propellant Recorded through this Optical Access Window.}
+\label{fig4}
+\end{figure}
+
 For each test, video data of the combustion event was recorded with a high-speed digital camera at a framing rate
 of 120 fps, capturing the propagation of the flame front as it consumes the propellant and linear regression of the
 burning surface. Instrunet and LabVIEW software were used to monitor the pressure inside the strand burner chamber
@@ -114,24 +143,11 @@ a selected burn time. A typical series of captured images during a combustion ev
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.48\textwidth]{Figure_1.jpg}
-\caption{Schematic-Diagram of High-Pressure Optical Strand Burner. Propellant stand inserted from bottom}
-\label{fig1}
+\includegraphics[width=0.75\textwidth]{Figure_5.jpg}
+\caption{Series of Captured Images of Linear Burning Process of AF-M315E. Demonstrates the Linear Combustion Behavior as determined form Trajectory Plots.}
+\label{fig5}
 \end{figure}
 
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.48\textwidth]{Figure_2.jpg}
-\caption{Photograph of High--Pressure Optical Strand Burner. Orientation shows Camera View of Optical Access Window}
-\label{fig2}
-\end{figure}
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.75\textwidth]{Figure_3.jpg}
-\caption{AF-M315E with Igniter in the Test Cylinder installed on Strand Burner Base Plate. Nichrome Wire placed through Center of Double-Base Propellant}
-\label{fig3}
-\end{figure}
 
 \section{Bayesian Inversion Analysis} \label{Bayesian_Inv_Analysis}
 
@@ -242,6 +258,13 @@ for AF-M315E. The data for three average chamber pressures 556, 782 and 1008 psi
 fits were applied to the data to attain yielding burning rates of 1.42, 2.39 and 4.00 mm/s, respectively, for
 the three average chamber pressures.
 
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.75\textwidth]{Figure_6.jpg}
+\caption{Burned Distance of AF-M315E as a function of time at Mulitple Pressures. Higher Pressures led to Increased Burned Distance.}
+\label{fig6}
+\end{figure}
+
 The complete burns of AF-M315E are shown in Figure \ref{fig7}. A number of experiments were conducted around 700
 psia and no deflaration was observed. The reason for this phenomenon is not fully clear, but may be attributed to
 aging of the propellant. From approximately 470 to 650 psia, a plateau region of complete burning was observed. As
@@ -257,6 +280,7 @@ For 780 - 1600 psia:	R_b=5.01x10^{-6} \cdot P^1.96
 \begin{equation} \label{lp_Rb_exp}
 For 470 - 650 psia:	R_b=1.78 \cdot P*{-0.0386}
 \end{equation}
+
 
 \subsection{Bayesian Inversion Analysis} \label{resultsBayes}
 
@@ -283,7 +307,7 @@ As such, further analysis on this model was not pursued.
 \begin{figure}[htb]
 \centering
 \includegraphics[width=\textwidth]{Single_Burn_Rate_Results.png}
-\caption{Single Burn Rate Law Model \& Data Comparison}
+\caption{Single Burn Rate Law Model \& Data Comparison. Model Accurate at Pressures above Self-Extinguished Zone.}
 \label{SingleBRfig}
 \end{figure}
 
@@ -383,7 +407,7 @@ more concentrated, well-defined peak.
 \label{HPpdf}
 \end{figure}
 
-Overall, the results show that the Bayesian Inversion methods emplyed for this analysis provided additional information
+Overall, the results show that the Bayesian Inversion methods employed for this analysis provided additional information
 about the burn rate of AF-M315E which was not provided and/or determined by experimental data. The "for-free" ability to
 determine the 95% confidence interval from the convariance allows one to a) determine what pressure regimes to collect
 additonal data to improve the models and b) if those experiments were executed, the range over which one would most likely
