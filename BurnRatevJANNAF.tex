@@ -91,14 +91,14 @@ environment, as shown schematically in Figure \ref{fig1}. The chamber, construct
 equipped with two optical viewing ports to allow for video observation of the burning surface as a function of
 time. A photograph of the high-pressure optical strand burner is shown in Figure \ref{fig2}.
 
-\begin{figure}[htb]
+\begin{figure}[htb!]
 \centering
 \includegraphics[width=0.25\textheight]{Figure_1.jpg}
 \caption{Schematic-Diagram of High-Pressure Optical Strand Burner. Propellant stand inserted from bottom}
 \label{fig1}
 \end{figure}
 
-\begin{figure}[htb]
+\begin{figure}[htb!]
 \centering
 \includegraphics[width=0.25\textheight]{Figure_2.jpg}
 \caption{Photograph of High--Pressure Optical Strand Burner. Orientation shows Camera View of Optical Access Window}
@@ -122,14 +122,14 @@ which was routed through high-pressure feed through fittings at the bottom of th
 close-up view of an installed propellant sample is shown in Figure \ref{fig3}. In addition, AF-M315E installed in
 the liquid strand burner (seen through the optical port) is shown in Figure \ref{fig4}.
 
-\begin{figure}[htb]
+\begin{figure}[htb!]
 \centering
 \includegraphics[width=0.25\textheight]{Figure_3.jpg}
 \caption{AF-M315E with Igniter in the Test Cylinder installed on Strand Burner Base Plate. Nichrome Wire placed through Center of Double-Base Propellant.}
 \label{fig3}
 \end{figure}
 
-\begin{figure}[htb]
+\begin{figure}[htb!]
 \centering
 \includegraphics[width=0.25\textheight]{Figure_4.jpg}
 \caption{AF-M315E Sample seen through Front Optical Port in Liquid Strand Burner. Linear Regression of Propellant Recorded through this Optical Access Window.}
@@ -143,7 +143,7 @@ as well as record instantaneous pressure and ignition data. ImageJ video softwar
 were used to analyze the video images and calculate the linear regression burning rates with average pressure over
 a selected burn time. A typical series of captured images during a combustion event is shown in Figure \ref{fig5}.
 
-\begin{figure}[htb]
+\begin{figure}[htb!]
 \centering
 \includegraphics[width=0.25\textheight]{Figure_5.jpg}
 \caption{Series of Captured Images of Linear Burning Process of AF-M315E. Demonstrates the Linear Combustion Behavior as determined form Trajectory Plots.}
@@ -260,7 +260,7 @@ for AF-M315E. The data for three average chamber pressures 556, 782 and 1008 psi
 fits were applied to the data to attain yielding burning rates of 1.42, 2.39 and 4.00 mm/s, respectively, for
 the three average chamber pressures.
 
-\begin{figure}[htb]
+\begin{figure}[htb!]
 \centering
 \includegraphics[width=0.25\textheight]{Figure_6.jpg}
 \caption{Burned Distance of AF-M315E as a function of time at Mulitple Pressures. Higher Pressures led to Increased Burned Distance.}
@@ -306,7 +306,7 @@ It does not appear to model the burn rates recorded at pressures $<$780 psi.
 Based on this result, it was conclude that two burn rate laws would model the data better. 
 As such, further analysis on this model was not pursued.
 
-\begin{figure}[htb]
+\begin{figure}[htb!]
 \centering
 \includegraphics[width=0.25\textheight]{Single_Burn_Rate_Results.png}
 \caption{Single Burn Rate Law Model \& Data Comparison. Model Accurate at Pressures above Self-Extinguished Zone.}
@@ -320,6 +320,7 @@ as a dual burn rate law. The resulting burn rate constants $A$ and $n$ can be se
 \ref{Table:brlpresults} for both pressure regimes. 
 
 \begin{table}
+\centering
 \caption{Burn Rate Law Parameter Results}
 \label{Table:brlpresults}
 \begin{tabular}{|c|c|c|c|c|}
@@ -338,7 +339,7 @@ pressure regime. The resulting Bayesian Inversion Method models have tight 95\% 
 areas where the data is more concentrated. Figure \ref{DualBRfig} shows the resulting models and 95\% confidence 
 intervals compared to the recorded data.
 
-\begin{figure}[htb]
+\begin{figure}[htb!]
 \centering
 \includegraphics[width=0.25\textheight]{Dual_Burn_Rate_Results.png}
 \caption{Dual Burn Rate Law Model \& Data Comparison. Model Accurately Predicts Burn Rate for AF-M315E.}
@@ -353,7 +354,7 @@ autocorrelation using MATLAB's autocorr function. Again, as expected, the Autoco
 Figures \ref{autoHP} \& \ref{autoLP} decrease and tend to zero as lag increases. Together these results indicate
 random samplings of the pdf for each of the parameters.
 
-\begin{figure}[htb]
+\begin{figure}[htb!]
 \centering
 \includegraphics[width=0.48\textwidth]{FilteredChain_lnA_LP.png}
 \includegraphics[width=0.48\textwidth]{FilteredChain_n_LP.png}
@@ -361,7 +362,7 @@ random samplings of the pdf for each of the parameters.
 \label{LPChain}
 \end{figure}
 
-\begin{figure}[htb]
+\begin{figure}[htb!]
 \centering
 \includegraphics[width=0.48\textwidth]{FilteredChain_lnA_HP.png}
 \includegraphics[width=0.48\textwidth]{FilteredChain_n_HP.png}
@@ -369,7 +370,7 @@ random samplings of the pdf for each of the parameters.
 \label{HPChain}
 \end{figure}
 
-\begin{figure}[htb]
+\begin{figure}[htb!]
 \centering
 \includegraphics[width=0.48\textwidth]{ACF_lnA_filt_HP.png}
 \includegraphics[width=0.48\textwidth]{ACF_n_filt_HP.png}
@@ -377,7 +378,7 @@ random samplings of the pdf for each of the parameters.
 \label{autoHP}
 \end{figure}
 
-\begin{figure}[htb]
+\begin{figure}[htb!]
 \centering
 \includegraphics[width=0.48\textwidth]{ACF_lnA_filt_LP.png}
 \includegraphics[width=0.48\textwidth]{ACF_n_filt_LP.png}
@@ -393,7 +394,7 @@ parameter considering the limited number of data points available (9 data points
 is expected to result in smaller variance which would manifest itself as a narrower Guassian pdf profile with an even
 more concentrated, well-defined peak.
 
-\begin{figure}[htb]
+\begin{figure}[htb!]
 \centering
 \includegraphics[width=0.48\textwidth]{PDF_lnA_LP.png}
 \includegraphics[width=0.48\textwidth]{PDF_n_LP.png}
@@ -401,7 +402,7 @@ more concentrated, well-defined peak.
 \label{LPpdf}
 \end{figure}
 
-\begin{figure}[htb]
+\begin{figure}[htb!]
 \centering
 \includegraphics[width=0.48\textwidth]{PDF_lnA_HP.png}
 \includegraphics[width=0.48\textwidth]{PDF_n_HP.png}
